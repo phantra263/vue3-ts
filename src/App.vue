@@ -1,9 +1,23 @@
 <script setup lang="ts">
-import Timeline from './components/Timeline.vue';
+import Navbar from './components/Navbar.vue'
+// import Timeline from './components/Timeline.vue';
 </script>
 
 <template>
-  <Timeline />
+  <div>
+    <Navbar />
+    <RouterView />
+    <!-- <Suspense>
+      <template #default>
+        <Timeline />
+      </template>
+
+      <template #fallback>
+        loading...
+      </template>
+    </Suspense> -->
+  </div>
+
 </template>
 
 <style scoped>

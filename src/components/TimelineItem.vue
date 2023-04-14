@@ -16,5 +16,12 @@
     text-align: left;
     padding: 10px;
     border: 1px solid;
+    cursor: pointer;
+    span {
+      display: block;
+      &:first-child {
+        color: #000000;
+      }
+    }
   }
 </style>
