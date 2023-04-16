@@ -4,11 +4,10 @@
   import { periods, Period } from '../constants';
 
   const postsStore = usePosts();
-  
-  await postsStore.fetchPosts()
+
+  await postsStore.fetchPosts();
 </script>
 <template>
-  {{ postsStore }}
   <nav>
     <a
       v-for="(period, index) in periods"
